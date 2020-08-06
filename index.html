@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="anima5.css"/>
+	<script src="jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("ul li").addClass("active");
+    setTimeout(function(){
+        $('ul li').removeClass('active');},4000);
+    });
+  }); 
+
+    </script>
+</head>
+<body> 
+	<div class="center">
+    	<ul>
+        	<li>C</li>
+            <li>H</li>
+            <li>I</li>
+            <li>T</li>
+            <li>V</li>
+            <li>A</li>
+            <li>N</li>
+        </ul>
+    </div>
+    <button type="button" class="ji" onclick="document.getElementById('myImage').src='gyt.jpg.'".style.width="200px" onmouseout="document.getElementById('myImage').src='my.jpg'">Click Here.</button>
+<img id="myImage" src="my.jpg" style="width:150px; position: absolute; margin-top: 32%; margin-left: 30px;" >
+
+</body>
+</html>
